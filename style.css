@@ -115,8 +115,6 @@ body {
     display: flex;
     background-color: var(--main-color);
     padding: 40px 20px;
-    margin: 30px;
-    border-radius: 10px;
 }
 
 .event-summary {
@@ -132,7 +130,7 @@ body {
     font-size: 25px;
     width: 100%;
     line-height: 1.5em;
-    margin: 15px 0;
+    margin-bottom: 30px;
 }
 
 .btn {
@@ -170,33 +168,34 @@ body {
 
 /* For Small Devices */
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 430px) {
     
     .event-content {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border-radius: 5px;
       }
       .event-page h2 {
         font-size: 40px;
       }
       .event-content img {
         width: auto;
-        height: 200px;
+        height: 100px;
+        display: none;
       }
       .event-summary p {
-          font-size: 15px;
-          line-height: 1.8em;
-          margin: 10px;
+          font-size: 18px;
+          line-height: 1.5em;
       }
       .btn {
-          padding: 15px 15px;
+          padding: 20px 30px;
       }
       .btn button {
-          font-size: 15px;
+          font-size: 20px;
       }
       .btn i {
-          font-size: 20px;
+          font-size: 25px;
       }
     #menu-icon {
         display: block;
