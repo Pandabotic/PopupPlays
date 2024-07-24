@@ -160,7 +160,43 @@ body {
 
 /*Responsiveness*/
 
-@media only screen and (max-width: 800px) {
+/* For Small Devices */
+
+@media only screen and (max-width: 330px) {
+    
+    .event-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .event-page h2 {
+        font-size: 40px;
+      }
+      .event-summary p {
+          font-size: 12px;
+          line-height: 1.5rem;
+          margin: 10px;
+          font-weight: 600;
+      }
+      .btn {
+          padding: 12px 12px;
+      }
+      .btn button {
+          font-size: 15px;
+      }
+      .btn i {
+          font-size: 20px;
+      }
+
+    .event-content img {
+        position: absolute;
+        transform: scaleX(-1);
+        left: 25%;
+        top: 112%;
+        margin-top: 10px;
+        width: auto;
+        height: 110px;
+    }
     #menu-icon {
         display: block;
     }
@@ -183,49 +219,40 @@ body {
     }
 }
 
-@media only screen and (max-width: 450px) {
+/* For Medium Devices */
 
-    .event-content {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+@media only screen and (min-width: 576px) {
+
+}
+
+@nedia only screen and (min-width: 768px) {
+
+}
+/* For Large Devices */
+
+@media only screen and (min-width: 968px) {
+    #menu-icon {
+        display: block;
     }
-    .event-content img {
+    .navbar {
         position: absolute;
-        transform: scaleX(-1);
-        left: -10%;
-        top: 147%;
-        margin-top: 10px;
-        width: auto;
-        height: 180px;
+        top: 100%;
+        right: 0%;
+        width: 100%;
+        display: none;
+        background-color: black;
     }
-    .event-summary p {
-        font-size: 15px;
-        line-height: 1.7rem;
-        margin: 10px;
-        font-weight: 600;
+    .navbar li {
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        margin: 20px 0;
     }
-    .btn {
-        padding: 20px 20px;
-    }
-    .btn button {
-        font-size: 15px;
-    }
-    .btn i {
-        font-size: 20px;
+    .navbar.active {
+        display: block;
     }
 }
 
-@media only screen and (max-width: 390px) {
-    .event-content img {
-        position: absolute;
-        transform: scaleX(-1);
-        left: -7%;
-        top: 160%;
-        margin-top: 10px;
-        width: auto;
-        height: 150px;
-    }
-}
+
 
 
