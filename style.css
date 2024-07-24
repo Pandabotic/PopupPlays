@@ -129,9 +129,9 @@ body {
 .event-summary p {
     color: white;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     width: 100%;
-    line-height: 1.7em;
+    line-height: 1.5em;
     margin: 15px 0;
 }
 
@@ -158,11 +158,19 @@ body {
     height: 400px;
 }
 
+.rights {
+    color: rgb(66, 66, 66);
+    text-align: center;
+    margin: 30px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
 /*Responsiveness*/
 
 /* For Small Devices */
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 390px) {
     
     .event-content {
         flex-direction: column;
@@ -172,9 +180,13 @@ body {
       .event-page h2 {
         font-size: 40px;
       }
+      .event-content img {
+        width: auto;
+        height: 200px;
+      }
       .event-summary p {
-          font-size: 10px;
-          line-height: 1.5rem;
+          font-size: 15px;
+          line-height: 1.8em;
           margin: 10px;
       }
       .btn {
@@ -186,16 +198,6 @@ body {
       .btn i {
           font-size: 20px;
       }
-
-    .event-content img {
-        position: absolute;
-        transform: scaleX(-1);
-        left: 25%;
-        top: 112%;
-        margin-top: 10px;
-        width: auto;
-        height: 110px;
-    }
     #menu-icon {
         display: block;
     }
@@ -218,17 +220,6 @@ body {
     }
 }
 
-@media only screen and (min-width: 375px) {
-    .event-content img {
-        position: absolute;
-        transform: scaleX(-1);
-        left: 30%;
-        top: 113%;
-        margin-top: 10px;
-        width: auto;
-        height: 110px;
-    }
-}
 
 
 
