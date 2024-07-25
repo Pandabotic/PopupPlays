@@ -173,7 +173,7 @@ body {
 
 /* For Small Devices */
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 425px) {
     
     .event-content {
         flex-direction: column;
@@ -221,6 +221,25 @@ body {
     }
     .navbar.active {
         display: block;
+    }
+}
+
+/*For Medium Devices*/
+
+@media only screen and (max-width: 768px) {
+    .content h2 {
+        font-size: 20px;
+        width: 50%;
+    }
+    .content img {
+        width: 65%;
+    }
+    .event-summary p {
+        font-size: 18px;
+    }
+    .event-content img {
+        width: auto;
+        height: 250px;
     }
 }
 
