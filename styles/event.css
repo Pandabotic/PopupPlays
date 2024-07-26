@@ -156,11 +156,11 @@ body {
 }
 
 .pricing-col p {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .pricing-col h3 {
-    font-size: 30px;
+    font-size: 35px;
     margin: 20px 0 40px;
 }
 
@@ -237,6 +237,15 @@ body {
     }
     .event-home p {
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .event-home img {
+        width: 95%;
+    }
+    .pricing-col span {
+        font-size: 1.2rem;
     }
 }
 
