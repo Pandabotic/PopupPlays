@@ -93,6 +93,32 @@ body {
     text-align: center;
 }
 
+.timer {
+    display: flex;
+    gap: 20px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer h3 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.timer div {
+    flex-basis: 100px;
+}
+
+.timer div p {
+    font-size: 50px;
+}
+
+.timer div span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
 #things-to-know,
 #pricing {
     display: flex;
@@ -239,6 +265,12 @@ body {
         font-size: 14px;
     }
 
+    .timer div {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
     #things-to-know h3 {
         font-size: 30px;
     }
@@ -253,6 +285,18 @@ body {
     }
     .event-home p {
         font-size: 12px;
+    }
+    .timer div {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    #days,
+    #hours,
+    #minutes,
+    #seconds,
+    .timer div span {
+        font-size: 20px;
     }
 }
 
